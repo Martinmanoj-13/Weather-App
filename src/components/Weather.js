@@ -17,7 +17,7 @@ function Weather() {
       alert("Add values");
     } else {
       const data = await fetch(
-        `https://api.openweathermap.org/data/2.5/weather?q=${form.city},${form.country}&APPID=${APIKEY}`
+        `https://api.openweathermap.org/data/2.5/weather?q=${form.city},${form.country}&APPID=${"dbc05f3cb117c754eeed7683d3a74d7a"}`
       )
         .then((res) => res.json())
         .then((data) => data);
@@ -40,6 +40,8 @@ function Weather() {
   return (
     <div className="weather">
       <span className="title">Weather App</span>
+      <img src="https://img.freepik.com/premium-vector/clouds-stars-sun-blue-background-childrens-vector-illustration-sky_153074-219.jpg"/>
+      
       <br />
       <form>
         <input
