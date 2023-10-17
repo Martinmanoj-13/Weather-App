@@ -10,7 +10,7 @@ function Weather() {
   });
 
   const APIKEY = "Enter Your API Key";
-  
+
   async function weatherData(e) {
     e.preventDefault();
     if (form.city === "") {
@@ -38,10 +38,10 @@ function Weather() {
     }
   };
   return (
+
     <div className="weather">
       <span className="title">Weather App</span>
-      <img src="https://img.freepik.com/premium-vector/clouds-stars-sun-blue-background-childrens-vector-illustration-sky_153074-219.jpg"/>
-      
+      <img src="https://img.freepik.com/premium-vector/clouds-stars-sun-blue-background-childrens-vector-illustration-sky_153074-219.jpg" />
       <br />
       <form>
         <input
